@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:paddingEnd="8dp"
+    android:paddingLeft="8dp"
+    android:paddingStart="8dp"
+    android:paddingTop="20dp"
+    tools:context=".module.elementary_1.ElementaryFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="fragment_token">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvToken"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_load"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="请求数据" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_marginLeft="5dp"
+            android:id="@+id/btn_destory"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="销毁token" />
+
+        <include layout="@layout/tip_bt" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
